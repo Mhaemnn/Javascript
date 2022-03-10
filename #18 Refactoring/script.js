@@ -1,0 +1,1 @@
+//teknik ini digunakan untuk menyederhanakan pengkodean yang lebih efektif

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Javascript: String</title>
+    <style>
+        body {
+            background-color: #eaeaea;
+            font-family: sans-serif;
+        }
+
+        .container {
+            background-color: white;
+            width: 600px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .container span {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h3>
+            "tipe data string dalama Javascript digunakan untuk mempresentasikan data tekstual"
+        </h3>
+        <p>
+            dalam menulis string hanya menggunakan tanda titik dua " atau tanda satu '
+            contoh<span>"Muhaemin" / 'mumu'</span>
+        </p>
+        <h4>berikut adalah Escpae sequences di dalam Javascript</h4>
+        <ul>
+            <li>\0: karakter NUL</li>
+            <li>\b: backspace</li>
+            <li>\t: horizontal tab</li>
+            <li>\n: newline</li>
+            <li>\f: from feed</li>
+            <li>\r: cerriage return</li>
+            <li>\": tanda kutip dua (double quote)</li>
+            <li>\': tanda kutip satu (apostrope atau single quote)</li>
+            <li>\\: garis miring blackslash</li>
+            <li>\xXX: karakter latin-1 dengan menggunakan 2 digit desimal XX</li>
+            <li>\uXXX: karakter unicode dengan menggunakan empat digit desimal XXXX</li>
+        </ul>
+        <hr>
+
+
+    </div>
+    <script>
+        //hasil: jum'at
+        var nama = 'jum\'at';
+        //hasil: https:\\www.Github.io.com 
+        var situs = 'http:\\\www.Github.io.com';
+        //pesan: 
+        var pesan = "dia berkata: I\'ll be back";
+        //hasil kalimat ini terdiri dari dua baris
+        var kalimat = "kalimat ini tediri dari \n baris";
+        //
+        var santai = "saya sedang ngopi di caf\u00e9";
+    </script>
+</body>
+
+</html>
