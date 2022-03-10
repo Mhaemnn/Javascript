@@ -1,20 +1,21 @@
-/*
-// pengkodisian if else
-if (kondisi){
-    aksi ====> kalukan aksi jika kondisi berniali true
+/*---------------------------
+//Javascript if else
+//Syntax sederhana
+
+if(kondisi){
+    //code program yang akan dijalankan apabila kondisi terpenuhi
 }
+else{
+    //kode prgram yang akan dijalankan apabila kondisi tidak terpenuhi
+}
+ ----------------------------*/
 
-...====> keluar dari block jika kondisi berniali false
- */
-// TODO perbandingan didalam pengulangan for
-//? syntax sederhananya
-var totalMobil = 10;
+var nilai;
+nilai = prompt('Masukan Nilai');
 
-for (var noMobil = 1; noMobil <= totalMobil; noMobil++) {
-    if (noMobil <= 6) {
-        console.log('Mobil No. ' + noMobil + ' beroperasi dengan baik')
-    }
-    else {
-        console.log('Mobil No.' + noMobil + ' beroperasi berhenti/rusak')
-    }
+if (nilai > 0) {
+    alert('Nilai positif')
+}
+else {
+    alert('Bukan niali positif')
 }
