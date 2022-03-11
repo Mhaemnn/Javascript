@@ -1,0 +1,18 @@
+body {
+    background-color: #eaeeea;
+}
+
+.container {
+    background-color: white;
+    width: 600px;
+    margin: auto;
+    padding: 20px;
+}
+
+#pertama {
+    background-color: yellow;
+}
+
+.container span {
+    color: red;
+}
