@@ -15,7 +15,7 @@ __javascript DOM__: Adalah antarmuka pemrograman untuk HTML yang mempresentasika
         <li>dll</li>
         </ul>
 </ul>
-<<<<<<< HEAD
+**Contoh penggunan DOM Sederhana**
 
 ```javascript
 //DOM Selection
