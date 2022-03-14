@@ -1,4 +1,4 @@
-## Javascipt & Javascript DOM
+## Javascript & DOM
 
 __javascript__: <br>
 __javascript DOM__: Adalah antarmuka pemrograman untuk HTML yang mempresentasikan halaman web, sehingga program dapat mengubah dan memanipulasi strukturnya __-Mozilla__
