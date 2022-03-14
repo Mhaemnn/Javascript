@@ -1,4 +1,4 @@
-## Javascipt & Javascript DOM
+## Javascript & DOM
 
 __javascript__: <br>
 __javascript DOM__: Adalah antarmuka pemrograman untuk HTML yang mempresentasikan halaman web, sehingga program dapat mengubah dan memanipulasi strukturnya 
@@ -15,33 +15,36 @@ __javascript DOM__: Adalah antarmuka pemrograman untuk HTML yang mempresentasika
         <li>dll</li>
         </ul>
 </ul>
+<<<<<<< HEAD
 
 ```javascript
 //DOM Selection
 //documnet.getElementById('')  -->mengembalikan element
 
-const judul = document.getElementById('judul');
-judul.style.color = "black";
-judul.style.backgroundColor = "#aaa";
-judul.style.textAlign = "center";
-judul.innerHTML = "Mhaemnn"
-judul.style.textShadow = "1px 1px 2px white";
+const title = document.getElementById('title');
+title.style.color = "black";
+title.style.backgroundColor = "#aaa";
+title.style.textAlign = "center";
+title.innerHTML = "Mhaemnn"
+title.style.textShadow = "1px 1px 2px white";
 
 
 //document.GetElementsByTagName('') --> mengembalikan HTML Colection
-const paragraf = document.getElementsByTagName('p');
-for (let i = 0; i < paragraf.length; i++) {
-    paragraf[i].style.backgroundColor = "#eaeaea";
+const parag = document.getElementsByTagName('p');
+for (let i = 0; i < parag.length; i++) {
+    parag[i].style.backgroundColor = "#eaeaea";
 }
 
-for (let i = 0; i < paragraf.length; i++) {
-    paragraf[i].style.color = "black";
-    paragraf[i].style.textShadow = "1px 1px 2px white"
+for (let i = 0; i < parag.length; i++) {
+    parag[i].style.color = "black";
+    parag[i].style.textShadow = "1px 1px 2px white"
 }
 
 
 //document.getElementByClassName('') -->mengembalikan HTML Colection
-const paragraf1 = document.getElementsByClassName('p1');
-paragraf1[0].innerHTML = "DOM Javascript"
+const parag1 = document.getElementsByClassName('p1');
+parag1[0].innerHTML = "DOM Javascript"
 
 ```
+
+
