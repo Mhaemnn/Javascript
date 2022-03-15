@@ -24,3 +24,9 @@ for (let i = 0; i < paragraf.length; i++) {
 //document.getElementByClassName('') -->mengembalikan HTML Colection
 const paragraf1 = document.getElementsByClassName('p1');
 paragraf1[0].innerHTML = "DOM Javascript"
+
+
+//document.querySelector('')
+
+const paragraf4 = document.querySelector('#b p');
+paragraf4.style.color = "red"
