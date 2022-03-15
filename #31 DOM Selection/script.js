@@ -26,7 +26,16 @@ const paragraf1 = document.getElementsByClassName('p1');
 paragraf1[0].innerHTML = "DOM Javascript"
 
 
-//document.querySelector('')
-
+//document.querySelector('') --> Element
 const paragraf4 = document.querySelector('#b p');
 paragraf4.style.color = "red"
+
+const li = document.querySelector('section#b ul li:nth-child(1');
+li.style.backgroundColor = "salmon";
+
+
+//document.querySelectorAll('');
+const p = document.querySelectorAll('p');
+for (let i = 0; i < p.length; i++) {
+    p[i].style.backgroundColor = 'yellow'
+}
