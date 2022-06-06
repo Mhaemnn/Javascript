@@ -171,3 +171,42 @@ module.exports = {
 module.exports = {
     Animal, Rabbit, Eagle, myRabbit, myEagle,
 };
+
+
+//HOW TO SOLVE (imperatif)
+const name = ['nana', 'nunu', 'nini', 'nanang'];
+
+const newNamesBaru = [];
+
+for (i = 0; i < name.length; i++) {
+    newNamesBaru.push(`${name[i]}`);
+}
+
+console.log(newNamesBaru)
+
+
+//WHAT DO SOLVE (deklaratif)
+const names = ['saha', 'suhu', 'sihi', 'sahur'];
+const newNamaBaru = names.map((names) => `${names}!`);
+
+console.log(newNamaBaru);
+
+
+// PURE FUNCTION
+let PI = 3.14;
+const hitungLuasLingkaran = (jariJari) => {
+    return PI * (jariJari * jariJari);
+};
+
+console.log(hitungLuasLingkaran(4));
+
+PI = 5;
+console.log(hitungLuasLingkaran(4));
+
+//sama seperti yang di atas
+const hitungLuasLingkaranBaru = (jariJari) => {
+    return 3.14 * (jariJari * jariJari);
+};
+
+console.log(hitungLuasLingkaranBaru(4))
+console.log(hitungLuasLingkaranBaru(8))
