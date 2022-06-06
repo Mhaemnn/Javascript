@@ -210,3 +210,57 @@ const hitungLuasLingkaranBaru = (jariJari) => {
 
 console.log(hitungLuasLingkaranBaru(4))
 console.log(hitungLuasLingkaranBaru(8))
+
+
+const creatPersonWhitAge = (age, person) => {
+    person.age = age;
+    return person;
+};
+
+const person = {
+    name: "nana"
+};
+
+const newPerson = creatPersonWhitAge(22, person);
+console.log({ person, newPerson })
+
+
+//merubah menjadi pure dengan destructuring object
+const humanAge = (age, human) => {
+    return { ...human, age };
+};
+
+const human = {
+    name: "siragar"
+}
+
+const newHuman = humanAge(22, human);
+console.log(({ human, newHuman }))
+
+
+const ngaran = ['asep', 'otong', 'udin'];
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
