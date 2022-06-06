@@ -240,11 +240,39 @@ console.log(({ human, newHuman }))
 
 const ngaran = ['asep', 'otong', 'udin'];
 
+const ngaranPanjang = ngaran.map((ngaran) => `${ngaran}`);
+
+console.log({ ngaran, ngaranPanjang })
 
 
 
+//mengubah nilai dari sebuah object 
 
+const user = {
+    firstName: "juragan",
+    lastName: "emang",
+}
 
+const renameLastNameUser = (newLastName) => {
+    user.lastName = newLastName;
+}
+
+renameLastNameUser('empang', user);
+console.log(user);
+
+//MENGGUNAKAN FUNCTIONAL PROGRAMMING
+
+const hewan = {
+    ngaranHarep: "burung",
+    ngaranTukang: "manuk"
+}
+
+const ngaranHewan = (newHewan, hewan) => {
+    return { ...hewan, ngaranTukang: newHewan }
+};
+
+const newSato = ngaranHewan('mangkluk', hewan);
+console.log(newSato);
 
 
 
