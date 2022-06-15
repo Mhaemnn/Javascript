@@ -1,7 +1,8 @@
-var tambah = function (a, b) { //? a,b adalah peremeter
-    tambah = a + b;
-    return tambah;
+const executorFunction = (resolve, reject) => {
+    const isCoffeeMakeReady = true;
+    if (isCoffeeMakeReady) {
+        resolve("kopi berhasil di buat")
+    } else {
+        reject("mesin kopi tidak bisa digunakan")
+    }
 }
-console.log("hasil dari per tambahan = " + tambah(50, 50)); //TODO 50,50 adalah argument
-
-
