@@ -22,3 +22,5 @@ const handlesFailure = rejectionReason => {
     console.log(rejectionReason)
 }
 checkStock().then(handlesSuccess, handlesFailure)
+
+
