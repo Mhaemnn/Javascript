@@ -1,26 +1,40 @@
-const stock = {
-    coffeeBeans: 250,
-    water: 1000,
+function makeKapalapi() {
+    checkstcok()
+        .then((value) => {
+            console.log(value);
+            return checkstcok();
+        })
+        .then((value) => {
+            console.log(value);
+            return brewCoffee();
+
+        })
+        .then((value) => {
+            console.log(value);
+        })
+        .catch((rejectionReason) => {
+            console.log(rejectionReason)
+        })
 }
 
-const checkStock = () => {
+makeKapalapi();
+
+const checkstcok = () => {
     return new Promise((resolve, reject) => {
-        if (stock.coffeeBeans >= 16 && stock.water >= 250) {
-            resolve("stock cukup, bisa membuat kopi");
-        } else {
-            reject("stock tidak cukup");
-        }
-    });
-
-};
-
-const handlesSuccess = resolvedValue => {
-    console.log(resolvedValue);
+        setTimeout(() => {
+            if (!state.isCoffeeMachineBusy) {
+                console.log("mesin kopi siap digunakan");
+            } else {
+                reject("maaf, mesin kopi sedang sibuk");
+            }
+        }, 1000);
+    })
 }
 
-const handlesFailure = rejectionReason => {
-    console.log(rejectionReason)
+const state = {
+    stock: {
+        coffeeBeans: 250,
+        water: 1000
+    },
+    isCoffeeMachineBusy: false;
 }
-checkStock().then(handlesSuccess, handlesFailure)
-
-
