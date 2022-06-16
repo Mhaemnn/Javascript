@@ -6,3 +6,10 @@ const executorFunction = (resolve, reject) => {
         reject("mesin kopi tidak bisa digunakan")
     }
 }
+
+const makeCoffee = () => {
+    return new Promise(executorFunction);
+
+}
+const isCoffeePromise = makeCoffee();
+console.log(isCoffeePromise)
