@@ -1,24 +1,13 @@
-function makeCoffee() {
-    const coffee = getCoffee(); //asyc process menggunakan promise
-    console.log(coffee);
-}
-makeCoffee();
-
-
-//callback
-function makeCake() {
-    getCake(function (cake) {
-        console.log(cake)
+function fetchUsername() {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve('JSUser');
+        }, 3000);
     })
 }
 
-makeCake();
-
-//promise
-function makeCake() {
-    getCoffee().then(cake => {
-        console.log(cake)
-    })
-
-}
-makeCake()
+console.log("Fetching username...");
+fetchUsername().then((value) => {
+    console.log(`You are logged in as ${value}`);
+})
+console.log("Welcome!");
